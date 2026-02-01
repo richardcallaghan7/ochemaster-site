@@ -355,7 +355,7 @@
 
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
         }
 
@@ -664,7 +664,8 @@
         /* Responsive - Tablet */
         @media (max-width: 968px) {
             .feature-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
             }
 
             .solution-grid {
@@ -812,6 +813,7 @@
 
             /* Features */
             .feature-grid {
+                grid-template-columns: 1fr;
                 gap: 24px;
             }
 
