@@ -479,8 +479,8 @@
             opacity: 0.5;
         }
 
-        /* Pain Points Section */
-        .pain-points {
+        /* Before/After Section */
+        .before-after {
             padding: 100px 0;
             background: var(--bg-card);
         }
@@ -503,45 +503,96 @@
             margin: 0 auto;
         }
 
-        .pain-grid {
+        .ba-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .pain-card {
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            max-width: 800px;
+            margin: 0 auto;
             background: var(--bg-dark);
-            padding: 28px 28px 28px 32px;
-            border-radius: 16px;
+            border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-left: 3px solid var(--accent);
+            overflow: hidden;
+        }
+
+        .ba-column {
+            padding: 36px 32px;
+        }
+
+        .ba-column.before {
+            border-right: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .ba-column-header {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 28px;
             display: flex;
-            gap: 20px;
-            align-items: flex-start;
+            align-items: center;
+            gap: 8px;
         }
 
-        .pain-card .number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: rgba(248, 113, 113, 0.25);
-            line-height: 1;
-            min-width: 40px;
+        .ba-column.before .ba-column-header {
+            color: var(--text-muted);
         }
 
-        .pain-card .content {
-            flex: 1;
+        .ba-column.after .ba-column-header {
+            color: var(--primary);
         }
 
-        .pain-card h3 {
-            font-size: 1.15rem;
-            margin-bottom: 8px;
+        .ba-header-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .ba-column.before .ba-header-dot {
+            background: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        .ba-column.after .ba-header-dot {
+            background: var(--primary);
+            box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+        }
+
+        .ba-row {
+            margin-bottom: 24px;
+        }
+
+        .ba-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .ba-text {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .ba-column.before .ba-text {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .ba-column.after .ba-text {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .ba-column.after .ba-text strong {
+            color: var(--primary);
             font-weight: 600;
         }
 
-        .pain-card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
+        .ba-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 6px;
+            color: rgba(255, 255, 255, 0.25);
+            font-weight: 600;
         }
 
         /* Solution Section */
@@ -1063,7 +1114,7 @@
                 padding: 0 16px;
             }
 
-            .pain-points,
+            .before-after,
             .solution,
             .features,
             .how-it-works,
@@ -1088,30 +1139,31 @@
                 font-size: 1rem;
             }
 
-            /* Pain Points - Single column on mobile */
-            .pain-grid {
+            /* Before/After - Stack on mobile */
+            .ba-grid {
                 grid-template-columns: 1fr;
-                gap: 12px;
             }
 
-            .pain-card {
-                padding: 20px 20px 20px 24px;
-                gap: 16px;
+            .ba-column.before {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                padding: 28px 24px;
             }
 
-            .pain-card .number {
-                font-size: 1.75rem;
-                min-width: 28px;
+            .ba-column.after {
+                padding: 28px 24px;
             }
 
-            .pain-card h3 {
-                font-size: 1rem;
-                margin-bottom: 6px;
+            .ba-column-header {
+                margin-bottom: 20px;
             }
 
-            .pain-card p {
-                font-size: 0.9rem;
-                line-height: 1.5;
+            .ba-row {
+                margin-bottom: 18px;
+            }
+
+            .ba-text {
+                font-size: 0.95rem;
             }
 
             /* Solution */
@@ -1343,17 +1395,12 @@
                 font-size: 0.85rem;
             }
 
-            .pain-card {
-                padding: 16px 16px 16px 20px;
+            .ba-column {
+                padding: 20px 16px;
             }
 
-            .pain-card .number {
-                font-size: 1.5rem;
-                min-width: 24px;
-            }
-
-            .pain-card h3 {
-                font-size: 0.95rem;
+            .ba-text {
+                font-size: 0.9rem;
             }
         }
 
@@ -1410,44 +1457,57 @@
         </div>
     </section>
 
-    <!-- Pain Points Section -->
-    <section class="pain-points">
+    <!-- Before / After Section -->
+    <section class="before-after">
         <div class="container">
             <div class="section-header">
-                <h2>Tired of Filming Yourself and Still Not Knowing?</h2>
-                <p>You watch the slow-mo. You see something's off. But what exactly? And how bad?</p>
+                <h2>Stop Guessing. Start Knowing.</h2>
+                <p>Same footage. Completely different insight.</p>
             </div>
 
-            <div class="pain-grid">
-                <div class="pain-card">
-                    <div class="number">1</div>
-                    <div class="content">
-                        <h3>Which dart went wrong?</h3>
-                        <p>Your first dart hits. Your third misses. You know something changed but you can't figure out which throw went wrong.</p>
+            <div class="ba-grid">
+                <div class="ba-column before">
+                    <div class="ba-column-header">
+                        <span class="ba-header-dot"></span>
+                        Watching slow-mo
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">Which dart?</div>
+                        <div class="ba-text">"Something felt off on that last one"</div>
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">How bad?</div>
+                        <div class="ba-text">"Timing was... different? Maybe?"</div>
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">Your level</div>
+                        <div class="ba-text">"I think I'm getting better"</div>
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">What to fix</div>
+                        <div class="ba-text">"I'll just... throw more"</div>
                     </div>
                 </div>
-
-                <div class="pain-card">
-                    <div class="number">2</div>
-                    <div class="content">
-                        <h3>How different was the timing?</h3>
-                        <p>Was it a little off or way off? Without concrete numbers, you're guessing whether it matters.</p>
+                <div class="ba-column after">
+                    <div class="ba-column-header">
+                        <span class="ba-header-dot"></span>
+                        With OcheMaster
                     </div>
-                </div>
-
-                <div class="pain-card">
-                    <div class="number">3</div>
-                    <div class="content">
-                        <h3>Where do I actually stand?</h3>
-                        <p>Am I developing? Advanced? Close to elite? Without context, your score is just a number.</p>
+                    <div class="ba-row">
+                        <div class="ba-label">Which dart?</div>
+                        <div class="ba-text"><strong>Dart 2</strong> broke your pattern</div>
                     </div>
-                </div>
-
-                <div class="pain-card">
-                    <div class="number">4</div>
-                    <div class="content">
-                        <h3>What's my recurring pattern?</h3>
-                        <p>Does your third dart always rush? Does dart 2 hesitate? You need multiple sessions to spot the trend.</p>
+                    <div class="ba-row">
+                        <div class="ba-label">How bad?</div>
+                        <div class="ba-text"><strong>0.65s slower</strong> — much slower than darts 1 &amp; 3</div>
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">Your level</div>
+                        <div class="ba-text"><strong>78 Advanced</strong> — up 8 points since last session</div>
+                    </div>
+                    <div class="ba-row">
+                        <div class="ba-label">What to fix</div>
+                        <div class="ba-text"><strong>2-1 Tempo Drill</strong> — 2 sets of 15 throws</div>
                     </div>
                 </div>
             </div>
