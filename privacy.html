@@ -85,8 +85,8 @@
 
         <h2>2. Information We Collect</h2>
 
-        <h3>Video & Pose Data</h3>
-        <p>When you record or select a video for analysis, OcheMaster extracts body pose data (landmark positions for shoulders, elbows, wrists, and hips) directly on your device using on-device machine learning. <strong>Your video never leaves your device.</strong> Only the extracted pose keypoints (approximately 200KB of coordinate data) are sent to our servers for biomechanical analysis.</p>
+        <h3>Video & Analysis Data</h3>
+        <p>When you record or select a video for analysis, OcheMaster uploads your video to our secure servers for processing. We use computer vision to extract body pose data (landmark positions for shoulders, elbows, wrists, and hips) and analyze your throwing mechanics. Videos are stored securely to enable replay features and are associated with your device identifier. You can delete your videos at any time through the app.</p>
 
         <h3>Analysis Results</h3>
         <p>We store the results of your throw analysis, including scores, metrics, coaching feedback, and timestamps, to enable progress tracking features.</p>
@@ -112,8 +112,8 @@
             <li>To provide technical support and respond to your inquiries</li>
         </ul>
 
-        <h2>4. On-Device Processing</h2>
-        <p>OcheMaster uses Google's MediaPipe pose estimation running entirely on your device to extract body landmarks from your videos. The video file stays on your phone at all times. Only the extracted pose coordinates are transmitted to our servers for throw detection, metric computation, and coaching analysis. This approach minimizes data transmission and keeps your video data private.</p>
+        <h2>4. Video Processing</h2>
+        <p>OcheMaster uploads your video to our secure servers where we use MediaPipe pose estimation to extract body landmarks and analyze your throwing mechanics. Videos are stored to enable replay features, allowing you to review your throws with skeleton overlays. All video data is encrypted in transit (HTTPS/TLS) and at rest. You can delete individual sessions or all your data at any time through the app settings.</p>
 
         <h2>5. Data Storage & Security</h2>
         <ul>
@@ -138,7 +138,7 @@
             <li><strong>Anthropic Claude API</strong> &mdash; for AI-powered coaching narratives and training plans. We send anonymized throw metrics (scores and measurements only, no video or personal data) to generate personalized coaching feedback.</li>
             <li><strong>Sentry</strong> (<a href="https://sentry.io/privacy/">sentry.io</a>) &mdash; for crash reporting and error tracking. Collects device model, OS version, and stack traces when errors occur. No video or personal data is sent.</li>
             <li><strong>PostHog</strong> (<a href="https://posthog.com/privacy">posthog.com</a>) &mdash; for anonymous product analytics. Collects feature usage events tied to your device identifier. No video or personal data is sent.</li>
-            <li><strong>Google MediaPipe</strong> &mdash; for on-device pose estimation. This runs entirely on your device and does not transmit any data to Google.</li>
+            <li><strong>Google MediaPipe</strong> &mdash; for pose estimation on our servers. We use MediaPipe to extract body landmarks from your videos for biomechanical analysis.</li>
         </ul>
         <p>We do not sell, rent, or trade your personal information to any third party.</p>
 

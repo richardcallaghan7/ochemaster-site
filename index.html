@@ -8,7 +8,7 @@
     <title>OcheMaster - Visit-Based Throw Diagnostics for Serious Darts Players</title>
     <meta name="title" content="OcheMaster - Visit-Based Throw Diagnostics for Serious Darts Players">
     <meta name="description" content="Film your darts throws, get instant feedback on what went wrong. Timing off? Elbow drifting? OcheMaster tells you exactly what to fix - no more squinting at slow-mo footage and guessing.">
-    <meta name="keywords" content="darts, dart throwing, darts analysis, darts coaching, throw mechanics, biomechanics, darts training, darts practice, dart technique, darts app, iOS darts app, darts improvement, consistency, timing analysis">
+    <meta name="keywords" content="darts, dart throwing, darts analysis, darts coaching, throw mechanics, darts training, darts practice, dart technique, darts app, iOS darts app, darts improvement, consistency, timing analysis">
     <meta name="author" content="OcheMaster">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
@@ -85,24 +85,29 @@
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD",
-            "description": "Free during beta"
+            "description": "Free"
         },
         "screenshot": [
-            "https://ochemaster.ai/screenshots/results.jpg",
-            "https://ochemaster.ai/screenshots/share.jpg",
-            "https://ochemaster.ai/screenshots/consistency.jpg",
-            "https://ochemaster.ai/screenshots/replay-overlay.jpg",
-            "https://ochemaster.ai/screenshots/upload.jpg"
+            "https://ochemaster.ai/screenshots/score.png",
+            "https://ochemaster.ai/screenshots/results.png",
+            "https://ochemaster.ai/screenshots/consistency.png",
+            "https://ochemaster.ai/screenshots/replay-overlay.png",
+            "https://ochemaster.ai/screenshots/coaching.png",
+            "https://ochemaster.ai/screenshots/upload.png"
         ],
         "featureList": [
-            "Skill Band Classification (Developing, Advanced, Elite)",
-            "Visit-based throw timing analysis",
+            "Animated score ring with skill band classification",
+            "Per-throw insights with concrete timing numbers",
             "Skeleton overlay mechanics visualization",
-            "Multi-throw consistency comparison",
+            "Multi-throw consistency comparison with wrist heatmap",
+            "Animated metric bars for all 5 throw mechanics",
             "Pattern detection across sessions",
-            "Progress tracking with insights"
+            "Session-to-session progress tracking with delta comparison",
+            "AI coaching with drills and coaching memory",
+            "Confetti celebrations for personal bests",
+            "Premium throw signature sharing card"
         ],
-        "releaseNotes": "Beta version with core analysis features",
+        "releaseNotes": "v1.0 — Animated score ring, metric bars, wrist heatmap, skeleton replay, AI coaching, confetti celebrations, throw signature sharing",
         "softwareVersion": "1.0.0"
     }
     </script>
@@ -201,13 +206,13 @@
                 "@type": "HowToStep",
                 "position": 2,
                 "name": "Upload and Analyze",
-                "text": "Upload the video to OcheMaster. Computer vision tracks your arm frame-by-frame, measuring timing and path consistency."
+                "text": "Upload the video to OcheMaster. Computer vision tracks your arm frame by frame, measuring timing, path consistency, and elbow stability."
             },
             {
                 "@type": "HowToStep",
                 "position": 3,
                 "name": "Review Your Results",
-                "text": "See your skill band classification, identify which throw drifted, and get concrete feedback on timing variations."
+                "text": "See your skill band, identify which throw drifted, get concrete feedback on timing variations, and receive coaching with a drill to fix your top issue."
             },
             {
                 "@type": "HowToStep",
@@ -1389,17 +1394,17 @@
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Notify Me When Live
             </a>
-            <p class="hero-note">Submitted to App Store Jan 28 - waiting on Apple.</p>
+            <p class="hero-note">Free on iOS. No account needed.</p>
 
             <div class="hero-screenshots">
                 <div class="phone-mockup">
-                    <img src="screenshots/results.jpg" alt="OcheMaster Results - Dart 2 was rushed insight" class="pos-results-hero">
+                    <img src="screenshots/results.png" alt="OcheMaster Insights - Dart 2 was hesitant with pattern detection and mini score rings" class="pos-results-hero">
                 </div>
                 <div class="phone-mockup">
-                    <img src="screenshots/share.jpg" alt="OcheMaster Score - 85 Advanced skill band with timing analysis" class="pos-score-hero">
+                    <img src="screenshots/score.png" alt="OcheMaster Session - Animated score ring showing 78 Advanced with color-coded metric bars" class="pos-score-hero">
                 </div>
                 <div class="phone-mockup">
-                    <img src="screenshots/consistency.jpg" alt="OcheMaster Consistency - Arm path overlay showing 96% consistency" class="pos-consistency-hero">
+                    <img src="screenshots/consistency.png" alt="OcheMaster Throw Overlay - Heatmap view with release cluster and consistency celebration" class="pos-consistency-hero">
                 </div>
             </div>
         </div>
@@ -1474,12 +1479,20 @@
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                             <span><strong>Pattern Tracking</strong> - Find what keeps happening across sessions and how to fix it.</span>
                         </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Coaching</strong> - Your top issue, a drill to fix it, with coaching memory that tracks your progress.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Premium Visuals</strong> - Animated score ring, color-coded metric bars, wrist heatmap, and confetti celebrations for personal bests.</span>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="solution-screenshot">
                     <div class="phone-mockup">
-                        <img src="screenshots/upload.jpg" alt="OcheMaster Upload Screen - Record your throws for analysis" class="pos-upload">
+                        <img src="screenshots/upload.png" alt="OcheMaster Record Screen - Analyze Video button with Today's Focus coaching cue" class="pos-upload">
                     </div>
                 </div>
             </div>
@@ -1499,7 +1512,7 @@
                     <div class="feature-screenshot">
                         <span class="feature-badge">See your form</span>
                         <div class="feature-phone">
-                            <img src="screenshots/replay-overlay.jpg" alt="OcheMaster Skeleton Overlay - Computer vision tracking your throwing arm motion" class="pos-replay">
+                            <img src="screenshots/replay-overlay.png" alt="OcheMaster Full-Screen Replay - Skeleton overlay with trajectory path tracing through throw phases" class="pos-replay">
                         </div>
                     </div>
                     <div class="feature-content">
@@ -1512,12 +1525,12 @@
                     <div class="feature-screenshot">
                         <span class="feature-badge">Compare throws</span>
                         <div class="feature-phone">
-                            <img src="screenshots/consistency.jpg" alt="OcheMaster Consistency Analysis - 96% arm path consistency with release point tracking" class="pos-consistency">
+                            <img src="screenshots/consistency.png" alt="OcheMaster Throw Overlay - Heatmap with release cluster zone and consistency celebration" class="pos-consistency">
                         </div>
                     </div>
                     <div class="feature-content">
-                        <h3>Overlay All Throws in a Visit</h3>
-                        <p>See how much your throw path varies. Tight grouping means you're consistent. Scattered? Something's drifting.</p>
+                        <h3>Overlay All Throws + Wrist Heatmap</h3>
+                        <p>See how much your throw path varies. Toggle to a wrist heatmap — tight clusters glow bright, scattered areas stay faint. See exactly where your release consistency breaks down.</p>
                     </div>
                 </div>
 
@@ -1525,25 +1538,25 @@
                     <div class="feature-screenshot">
                         <span class="feature-badge">Track progress</span>
                         <div class="feature-phone">
-                            <img src="screenshots/share.jpg" alt="OcheMaster Skill Band - Score 85 Advanced with progress to Elite" class="pos-score">
+                            <img src="screenshots/score.png" alt="OcheMaster Session Detail - Animated score ring at 78 Advanced with color-coded metric bars and deltas" class="pos-score">
                         </div>
                     </div>
                     <div class="feature-content">
-                        <h3>Skill Band Progress</h3>
-                        <p>See your score in context: Developing, Advanced, or Elite. Track your progress to the next level with clear milestones.</p>
+                        <h3>Animated Score Ring + Metric Bars</h3>
+                        <p>Your score comes alive with an animated ring that fills to your level. Below it, horizontal bars break down all 5 mechanics — color-coded and animated. Celebrate personal bests with confetti.</p>
                     </div>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-screenshot">
-                        <span class="feature-badge">Find patterns</span>
+                        <span class="feature-badge">AI coaching</span>
                         <div class="feature-phone">
-                            <img src="screenshots/results.jpg" alt="OcheMaster Pattern Detection - Dart 2 was rushed insight" class="pos-results">
+                            <img src="screenshots/coaching.png" alt="OcheMaster AI Coaching - Tempo drill with focus cue and throw overlay visualization" class="pos-results">
                         </div>
                     </div>
                     <div class="feature-content">
-                        <h3>Find Your Patterns</h3>
-                        <p>Which dart tends to rush? Which one hesitates? See patterns across sessions and get tips to fix them.</p>
+                        <h3>Coaching That Remembers You</h3>
+                        <p>One focused issue, one drill, a cue to remember. The AI tracks what you've worked on and adapts. No generic advice — it's based on your numbers.</p>
                     </div>
                 </div>
             </div>
@@ -1568,7 +1581,7 @@
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>Analyze Your Mechanics</h3>
-                    <p>Your phone tracks your arm frame by frame. You get timing, path consistency, and where you sit on the skill bands.</p>
+                    <p>Computer vision tracks your arm frame by frame. You get timing, path consistency, and where you sit on the skill bands.</p>
                 </div>
 
                 <div class="step">
@@ -1607,8 +1620,8 @@
                     - Richard
                 </p>
                 <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
-                    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">What's coming soon</p>
-                    <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Coaching features almost ready - your biggest issues ranked, specific drills, and a weekly plan tailored to what you need to fix. Also working on comparing your form across sessions. Android eventually.</p>
+                    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">What's in the app now</p>
+                    <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;">Animated score ring and metric bars that visualize your performance at a glance. Throw overlay with paths and wrist heatmap to see your consistency. Skeleton replay in slow motion. AI coaching with drills. Confetti celebrations for personal bests. Session-to-session progress tracking. A premium throw signature card you can share on socials. Always improving - if something's off or you want a feature, email me.</p>
                 </div>
             </div>
         </div>
@@ -1630,7 +1643,7 @@
                 </a>
             </div>
 
-            <p class="hero-note" style="margin-top: 24px;">Submitted Jan 28 - waiting on Apple. Android coming later.</p>
+            <p class="hero-note" style="margin-top: 24px;">Free on iOS. Android coming later.</p>
         </div>
     </section>
 
