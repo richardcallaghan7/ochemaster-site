@@ -26,22 +26,22 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/results.jpg",
-      "sizes": "1170x2532",
-      "type": "image/jpeg",
-      "label": "Analysis Results"
+      "src": "screenshots/score.png",
+      "sizes": "1320x2868",
+      "type": "image/png",
+      "label": "Session Analysis"
     },
     {
-      "src": "screenshots/progress.jpg",
-      "sizes": "1170x2532",
-      "type": "image/jpeg",
-      "label": "Progress Tracking"
+      "src": "screenshots/results.png",
+      "sizes": "1320x2868",
+      "type": "image/png",
+      "label": "Insights & Progress"
     }
   ],
   "related_applications": [
     {
       "platform": "itunes",
-      "url": "https://apps.apple.com/app/ochemaster/id-coming-soon"
+      "url": "https://apps.apple.com/app/ochemaster"
     }
   ],
   "prefer_related_applications": true
