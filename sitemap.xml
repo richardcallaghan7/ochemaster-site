@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://ocheiq.com/</loc>
-    <lastmod>2026-02-08</lastmod>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,29 +14,34 @@
       <image:caption>OcheIQ - Visit-based throw diagnostics for darts players</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://ocheiq.com/screenshots/score.png</image:loc>
-      <image:title>OcheIQ Session Detail</image:title>
-      <image:caption>Score ring showing 90 Elite with color-coded metric bars</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://ocheiq.com/screenshots/results.png</image:loc>
-      <image:title>OcheIQ Insights</image:title>
-      <image:caption>Per-throw insights with pattern detection and recent sessions</image:caption>
+      <image:title>OcheIQ Feedback Tab</image:title>
+      <image:caption>Feedback-first results showing Moved up to Advanced with metric bars and coaching drill</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://ocheiq.com/screenshots/replay-overlay.png</image:loc>
-      <image:title>OcheIQ Skeleton Overlay</image:title>
-      <image:caption>Skeleton tracking overlay with trajectory path and phase navigation</image:caption>
+      <image:loc>https://ocheiq.com/screenshots/score.png</image:loc>
+      <image:title>OcheIQ Throw Corridor</image:title>
+      <image:caption>Throw corridor with color-coded consistency ribbon and gold release dots</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://ocheiq.com/screenshots/consistency.png</image:loc>
-      <image:title>OcheIQ Throw Overlay</image:title>
-      <image:caption>Throw paths overlaid with coaching drill</image:caption>
+      <image:title>OcheIQ Throw Comparison</image:title>
+      <image:caption>Side-by-side dart comparison with outlier and steadiest throw labels</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ocheiq.com/screenshots/replay-overlay.png</image:loc>
+      <image:title>OcheIQ Skeleton Replay</image:title>
+      <image:caption>Full-screen skeleton tracking overlay with trajectory path and throw phase navigation</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://ocheiq.com/screenshots/coaching.png</image:loc>
       <image:title>OcheIQ Wrist Heatmap</image:title>
-      <image:caption>Wrist heatmap with release cluster zone and consistency label</image:caption>
+      <image:caption>Wrist heatmap with release point clustering, dashed consistency zone, and release label</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ocheiq.com/screenshots/upload.png</image:loc>
+      <image:title>OcheIQ Record Screen</image:title>
+      <image:caption>Record screen with Analyze Video button and Today's Focus coaching cue</image:caption>
     </image:image>
   </url>
 
